@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel = "stylesheet" type = "text/css" href = "../css/index.css" />
+	<!-- <script type = "text/javascript" src = "../js/common.js"></script> -->
+	<script type = "text/javascript" src = "../js/ajax.js"></script>
+	<script type = "text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+	<script type = "text/javascript" src = "../js/jquery.cookie.js"></script>
+	<script type = "text/javascript" src = "../js/shopCar.js"></script>
+</head>
+<body>
+	<!-- *************************top************************* -->
+	<div id = "top">
+		<div class = "wrap">
+			<a id = "index" href = "../index.html">蘑菇街首页</a>
+			<ul>
+				<li id= "top_first"><a id = "register" href = "#">注册</a><a id = "entry" href = "#">登录</a></li>
+				<li><a id = "order" href = "#">我的订单</a></li>
+				<li id = "sc"><a id = "shoppingCar" href = "#">购物车</a>
+					<div id = "shop_car"></div>
+				</li>
+				<li id = "cs"><a id = "customerService" href = "#">客户服务</a>
+					<ol id = "customerService_more">
+						<li><a href = "#">消费者服务</a></li>
+						<li><a href = "#">商家服务</a></li>
+						<li><a href = "#">规则中心</a></li>
+					</ol>
+				</li>
+				<li id = "ms"><img src = "../images/small_icons_three.jpg" /><a id = "myStores" href = "#">我的小店</a>
+					<ol id = "myStores_more">
+						<li><a href = "#">管理后台</a></li>
+						<li><a href = "#">商家社区</a></li>
+						<li><a href = "#">商家培训</a></li>
+						<li><a href = "#">市场入驻</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- *************************shopCar_top************************* -->
+	<div id = "shopCar_top">
+		<div class = "wrap">
+			<a href = "#"><img src = "../images/shopCar_top.gif" /></a>
+		</div>
+	</div>
+	<!-- *************************shopCar_main************************* -->
+	<div id = "shopCar_main">
+		<div class = "wrap">
+			<div id = "shop_goods">
+				<div id = "shop_header"><p>商品</p><p>单价（元）</p><p>数量</p></div>
+				<div id = "shopMain"></div>
+			</div>
+			<a><img src = "../images/shopCar_bottom.gif" /></a>
+		</div>
+	</div>
+</body>
+</html>

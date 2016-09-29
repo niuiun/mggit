@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel = "stylesheet" type = "text/css" href = "../css/index.css" />
+	<!-- <script type = "text/javascript" src = "../js/common.js"></script> -->
+	<script type = "text/javascript" src = "../js/ajax.js"></script>
+	<script type = "text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+	<script type = "text/javascript" src = "../js/jquery.cookie.js"></script>
+	<script type = "text/javascript" src = "../js/threeSquirrels.js"></script>
+</head>
+<body>
+	<!-- *************************top************************* -->
+	<div id = "top">
+		<div class = "wrap">
+			
+			<ul>
+				<li id= "top_first"><a id = "register" href = "#">注册</a><a id = "entry" href = "#">登录</a></li>
+				<li><a id = "order" href = "#">我的订单</a></li>
+				<li id = "sc"><a id = "shoppingCar" href = "shopCar.html">购物车</a>
+					<div id = "shop_car"></div>
+				</li>
+				<li id = "cs"><a id = "customerService" href = "#">客户服务</a>
+					<ol id = "customerService_more">
+						<li><a href = "#">消费者服务</a></li>
+						<li><a href = "#">商家服务</a></li>
+						<li><a href = "#">规则中心</a></li>
+					</ol>
+				</li>
+				<li id = "ms"><img src = "../images/small_icons_three.jpg" /><a id = "myStores" href = "#">我的小店</a>
+					<ol id = "myStores_more">
+						<li><a href = "#">管理后台</a></li>
+						<li><a href = "#">商家社区</a></li>
+						<li><a href = "#">商家培训</a></li>
+						<li><a href = "#">市场入驻</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- *************************shop_header************************* -->
+	<div id = "shop_header">
+		<div class = "wrap">
+			<div id = "user_info">
+				<div id = "user_info_pic"><img src = "../images/1xzvl8_ifqwmnjqgjtdcmdbgqzdambqgyyde_460x474.jpg" /></div>
+				<div id = "shop_name">
+					<div id = "name_wrap">
+						<p>零食满屋</p>
+						<img src = "../images/upload_ie4tcnlfha3dqmrrg4zdambqgqyde_83x16.png">
+					</div>
+					<div id = "shop_score">
+						<p>描述<span>4.60</span></p>
+						<p>价格<span>4.57</span></p>
+						<p>质量<span>4.58</span></p>
+						<p>服务<span>4.53</span></p>
+					</div>
+				</div>
+				<div id = "shop_action">
+					<div>收藏</div>
+					<div>私聊</div>
+				</div>
+			</div>
+			<div id = "shop_search">
+				<input id = "txt" type = "text" placeholder = "输入你想要的商品..." />
+				<input id = "sub" type = "submit" value = "搜全站" />
+				<a href = "#">搜本店</a>
+			</div> 
+		</div>
+	</div>
+	<!-- *************************banner************************* -->
+	<div id = "banner">
+		<img id = "banner_pic" src = "../images/banner.gif" />
+		<ul id = "banner_list">
+			<li id = "first"><a href = "#">首页</a></li>
+			<li><a href = "#">全部商品</a></li>
+			<li><a href = "#">29.9任选3件</a></li>
+			<li><a href = "#">进口零食品</a></li>
+			<li><a href = "#">糕点营养早餐</a></li>
+			<li><a href = "#">肉类即食</a></li>
+			<li><a href = "#">怀旧零食</a></li>
+			<li><a href = "#">蜀道香</a></li>
+			<li><a href = "#">糖果果冻</a></li>
+			<li><a href = "#">巧克力</a></li>
+		</ul>
+	</div>
+	<!-- *************************shop************************* -->
+	<div id = "shop">
+		<div class = "wrap">
+			<div id = "shopPic"></div>
+			<div id = "shopDes">
+				<h3 id = "goods_title">【三只松鼠坚果大礼包】1208g 零食干果礼盒组合6袋 包邮</h3>
+				<div id = "goods_main">
+					<dl>
+						<dt>价格：</dt>
+						<dd id = "del"><del>￥182.86</del></dd>
+					</dl>
+					<dl>
+						<dt>促销价：</dt>
+						<dd id = "price">￥128.00</dd>
+					</dl>
+					<dl>
+						<dt>店铺优惠：</dt>
+						<dd id = "benefit">活动商品29.90元任选3件</dd>
+					</dl>
+				</div>
+				<div id = "goods_im">
+					<dl id = "goods_customService">
+						<dt>客服：</dt>
+						<dd>联系客服</dd>
+					</dl>
+					<dl id = "goods_style">
+						<dt>款式：</dt>
+						<dd><img src = "../images/style.gif" /></dd>
+					</dl>
+					<dl id = "goods_size">
+						<dt>尺码：</dt>
+						<dd><img src = "../images/size.gif" /></dd>
+					</dl>
+				</div>
+				<div id = "goods_sku">
+					<dl>
+						<dt>数量：</dt>
+						<dd>
+							<div id = "goods_num">
+								<span id = "minus">-</span>
+								<input id = "result" type = "text" value = "1" />
+								<span id = "add">+</span>
+							</div>
+							<p>库存284件</p>
+						</dd>
+					</dl>
+				</div>
+				<div id = "goods_social">
+					<a id = "buy" href = "#">立刻购买</a>
+					<a id = "car">加入购物车</a>
+				</div>
+				<div id = "goods_extra">
+					<dl id = "characteristic">
+						<dt>商品特色：</dt>
+						<dd><img src = "../images/upload_ifrdcnbugiztintfg4zdambqmeyde_24x24.png" />蘑菇良品</dd>
+					</dl>
+					<div id = "promise">
+						<div>服务承诺：</div>
+						<ul>
+							<li><img src = "../images/idid_ifrtkzrshbrdkzbzmezdambqhayde_40x40.png" />劣一赔三服务</li>
+							<li><img src = "../images/idid_ifqtanrumy4dizbzmezdambqgyyde_40x40.png" />48小时发货</li>
+						</ul>
+					</div>
+					<dl id = "pay">
+						<dt>支付方式：</dt>
+						<dd><img src = "../images/pay.gif" /></dd>
+					</dl>
+				</div>
+			</div>
+			<div id = "hotShop">
+				<p>热卖推荐</p>
+				<div><img src = "../images/117567404_ie4dqzbvg5stanrzhezdambqgiyde_640x960.jpg" /><span>￥24.80</span></div>
+				<div><img src = "../images/117567404_ie4dsmjrha3tmztchezdambqgiyde_640x960.jpg" /><span>￥28.90</span></div>
+				<div><img src = "../images/143370813_654b9lhj8elhggdd36fh91i4285gh_640x960.jpg" /><span>￥13.80</span></div>
+			</div>
+		</div>
+	</div>
+	<!-- *************************module************************* -->
+	<div id = "module">
+		<div class = "wrap">
+			<div id = "module_left">
+				<img src = "../images/module_shop.gif" /><img src = "../images/module_classify.gif" />
+				<div id = "module_repeat">
+					<h3>看了又看</h3>
+				</div>
+			</div>
+			<div id = "module_right">
+				<img src = "../images/module_main.gif" />
+				<div id = "impression"></div>
+			</div>
+		</div>
+	</div>
+	<!-- *************************foot************************* -->
+	<div id = "foot">
+		<div class = "wrap">
+			<div id = "foot_wrap">
+				<div id = "foot_info">
+					<a id = "icons_bottom" href = "#"><img src = "../images/icons_bottom.jpg"></a>
+					<div class="info_text">
+						<p>营业执照注册号：<a class = "right_a" href = "#">330106000129004</a></p>
+						<p>增值电信业务经营许可证：<a class = "right_a" href = "#">浙B2-20110349</a></p>
+						<p>网络文化经营许可证：<a href = "#">浙网文（2016）0349-219号</a></p>
+						<p>
+							<a href = "#">安全责任书</a>
+						</p>
+						<p>
+							<a href = "#">
+								<img src = "../images/upload_ifrgemjwgq3gemzthazdambqmeyde_20x20.png">
+								<span>&nbsp;浙公网安备 33010602002329号</span>
+							</a>
+						</p>
+						<p>©2016 Mogujie.com 杭州卷瓜网络有限公司</p>
+					</div>
+				</div>
+				<div id = "foot_link">
+					<dl class = "link_company">
+						<dt>公司</dt>
+						<dd><a href = "#">关于我们</a></dd>
+						<dd><a href = "#">招聘信息</a></dd>
+						<dd><a href = "#">联系我们</a></dd>
+            		</dl>
+					<dl class = "link_consumer">
+						<dt>消费者</dt>
+						<dd><a href = "#">消费者服务</a></dd>
+						<dd><a href = "#">意见反馈</a></dd>
+						<dd><a href = "#">手机版下载</a></dd>
+					</dl>
+					<dl class = "link_business">
+						<dt>商家</dt>
+						<dd><a href = "#">商家入驻</a></dd>
+						<dd><a href = "#">商家后台</a></dd>
+						<dd><a href = "#">蘑菇商学院</a></dd>
+						<dd><a href = "#">商家社区</a></dd>
+					</dl>
+					<dl class = "link_safe">
+						<dt>权威认证</dt>
+						<dd>
+							<a href = "#"><img src = "../images/bank.jpg" /></a>
+							<a id = "last" href = "#"><img src = "../images/believable.jpg" /></a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div id = "foot_list">
+				<ul>
+					<li>友情链接: </li>
+					<li><a href = "#">蘑菇街游戏</a></li>
+					<li><a href = "#">淘粉吧</a></li>
+					<li><a href = "#">穿衣搭配</a></li>
+					<li><a href = "#">蘑菇街男装</a></li>
+					<li><a href = "#">蘑菇街鞋子</a></li>
+					<li><a href = "#">蘑菇街包包</a></li>
+					<li><a href = "#">QQ钱包</a></li>
+					<li><a href = "#">家具网</a></li>
+					<li><a href = "#">时尚品牌网</a></li>
+					<li><a href = "#">装修</a></li>
+					<li><a href = "#">蘑菇街母婴</a></li>
+					<li><a href = "#">衣联网</a></li>
+					<li><a href = "#">播视网视频</a></li>
+					<li><a href = "#">慧聪网</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- *************************fixed************************* -->
+	<div id = "fixed">
+		<ul id = "fixedList">
+			<li><a href = "#"><img src = "../images/wallet.gif" /><span>购物车</span></a></li>
+			<li><a href = "#"><img src = "../images/wallet.gif" /><span>优惠券</span></a></li>
+			<li><a href = "#"><img src = "../images/wallet.gif" /><span>钱包</span></a></li>
+			<li><a href = "#"><img src = "../images/wallet.gif" /><span>足迹</span></a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel = "stylesheet" type = "text/css" href = "../css/index.css" />
+	<!-- <script type = "text/javascript" src = "../js/common.js"></script> -->
+	<script type = "text/javascript" src = "../js/ajax.js"></script>
+	<script type = "text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+	<script type = "text/javascript" src = "../js/nuts.js"></script>
+</head>
+<body>
+	<!-- *************************top************************* -->
+	<div id = "top">
+		<div class = "wrap">
+			<ul>
+				<li id= "top_first"><a id = "register" href = "#">注册</a><a id = "entry" href = "#">登录</a></li>
+				<li><a id = "order" href = "#">我的订单</a></li>
+				<li><a id = "shoppingCar" href = "#">购物车</a></li>
+				<li id = "cs"><a id = "customerService" href = "#">客户服务</a>
+					<ol id = "customerService_more">
+						<li><a href = "#">消费者服务</a></li>
+						<li><a href = "#">商家服务</a></li>
+						<li><a href = "#">规则中心</a></li>
+					</ol>
+				</li>
+				<li id = "ms"><img src = "../images/small_icons_three.jpg" /><a id = "myStores" href = "#">我的小店</a>
+					<ol id = "myStores_more">
+						<li><a href = "#">管理后台</a></li>
+						<li><a href = "#">商家社区</a></li>
+						<li><a href = "#">商家培训</a></li>
+						<li><a href = "#">市场入驻</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- *************************header************************* -->
+	<div id = "header">
+		<div class = "wrap">
+			<a href = "../index.html"><img id = "icons" src = "../images/icons.jpg" /></a>
+			<div id = "header_main">
+				<div id = "searchBar">
+					<div>
+						<span><a href = "#">搜商品</a></span>
+						<!-- <ol>
+							<li><a href = "#">商品</a></li>
+							<li><a href = "#">店铺</a></li>
+						</ol> -->
+					</div>
+					<input id = "txt" type = "text" placeholder = "韩版牛仔裤" />
+					<input id = "btn" type = "button" />
+				</div>
+
+				<div id = "hotSearch">
+					<a href = "#">韩版连衣裙</a>
+					<a href = "#">小白鞋</a>
+					<a href = "#">潮T</a>
+					<a href = "#">运动套装</a>
+					<a href = "#">男T恤</a>
+					<a href = "#">夏季小包</a>
+					<a href = "#">短裤</a>
+					<a href = "#">衬衫</a>
+					<a href = "#">省心套装</a>
+				</div>
+			</div>
+			<img id = "two_code" src = "../images/two_code.jpg" />
+		</div>
+	</div>
+	<!-- *************************nuts_list************************* -->
+	<div id = "nuts_list">
+		<div class = "wrap">
+			<ul id = "nuts_list_top">
+				<li id = "first"><a href =" #">上衣</a></li>
+				<li><a href =" #">裙子</a></li>
+				<li><a href =" #">裤子</a></li>
+				<li><a href =" #">内衣</a></li>
+				<li><a href =" #">鞋子</a></li>
+				<li><a href =" #">包包</a></li>
+				<li><a href =" #">配饰</a></li>
+				<li><a href =" #">男友</a></li>
+				<li><a href =" #">美妆</a></li>
+				<li><a href =" #">母婴</a></li>
+				<li><a href =" #">家居</a></li>
+				<li><a href =" #">百货</a></li>
+				<li><a id = "food" href =" #">食品</a></li>
+				<li><a href =" #">家电</a></li>
+				<li><a href =" #">运动</a></li>
+			</ul>
+			<div id = "nuts_list_bottom">
+				<div id = "nuts_list_left">
+					<dl>
+						<dt><a href = "#">休闲食品</a></dt>
+						<dd><img src = "../images/upload_ie2dmmzzg4zdgmlegmzdambqgiyde_68x68.jpg" /><a href = "#">饼干</a><a href = "#">糕点</a><a href = "#">糖果</a><a href = "#">蜜饯</a><a id = "nuts" href = "#">坚果</a><a href = "#">肉干肉脯</a><a href = "#">巧克力</a><a href = "#">膨化食品</a><a href = "#">零食大礼包</a><a href = "#">方便速食</a><a href = "#">曲奇</a></dd>
+					</dl>
+					<dl>
+						<dt><a href = "#">进口零食</a></dt>
+						<dd><img src = "../images/upload_ieytanjygbsdgndegmzdambqmeyde_68x68.jpg" /><a href = "#">韩国</a><a href = "#">日本</a><a href = "#">东南亚</a><a href = "#">进口饼干</a><a href = "#">进口糕点</a><a href = "#">进口糖巧</a><a href = "#">进口水饮</a><a href = "#">泰国</a></dd>
+					</dl>
+					<dl>
+						<dt><a href = "#">茶酒饮品</a></dt>
+						<dd><img src = "../images/upload_ie2dozbxguztindegmzdambqgiyde_68x68.jpg" /><a href = "#">咖啡</a><a href = "#">冲饮谷物</a><a href = "#">花草茶</a><a href = "#">饮料</a><a href = "#">冲饮</a><a href = "#">果味茶饮</a><a href = "#">酒类</a><a href = "#">早餐冲饮</a><a href = "#">天然粉粉</a></dd>
+					</dl>
+					<dl>
+						<dt><a href = "#">最爱</a></dt>
+						<dd><img src = "../images/upload_ie2wknrwgrtgiylegmzdambqhayde_68x68.jpg" /><a href = "#">怀旧零食</a><a href = "#">肉食诱惑</a><a href = "#">营养早餐</a><a href = "#">午后时光</a><a href = "#">甜食控</a><a href = "#">办公室零食</a><a href = "#">抹茶</a><a href = "#">薯片</a><a href = "#">肉脯</a><a href = "#">芝士</a><a href = "#">宵夜必备</a></dd>
+					</dl>
+				</div>
+				<div id = "nuts_list_right"><img src = "../images/upload_ifrdoodggvrggm3egqzdambqmeyde_198x239.jpg" /></div>
+			</div>
+		</div>
+	</div>
+	<!-- *************************nuts_shop************************* -->
+	<div id = "nuts_shop">
+		<div class = "wrap">
+			<h3>坚果</h3>
+			<div id = "choose">
+				<ul>
+					<li><a id = "first" href = "#">综合</a></li>
+					<li><a href = "#">销量</a></li>
+					<li><a href = "#">最新</a></li>
+				</ul>
+				<input type = "text" value = "￥" />
+				<span>-</span>
+				<input type = "text" value = "￥" />
+				<button>确定</button>
+				<div id = "div_one"><a href = "#">19-28</a></div>
+				<div id = "div_two"><a href = "#">28-46</a></div>
+				<div id = "div_three"><a href = "#">46-299</a></div>
+			</div>
+			<div id = "nuts_shop_list">
+				<ul id = "nuts_main">
+					<li class = "nuts_li"></li>
+					<li class = "nuts_li"></li>
+					<li class = "nuts_li"></li>
+					<li class = "nuts_li"></li>
+					<li class = "nuts_li"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- *************************foot************************* -->
+	<div id = "foot">
+		<div class = "wrap">
+			<div id = "foot_wrap">
+				<div id = "foot_info">
+					<a id = "icons_bottom" href = "#"><img src = "../images/icons_bottom.jpg"></a>
+					<div class="info_text">
+						<p>营业执照注册号：<a class = "right_a" href = "#">330106000129004</a></p>
+						<p>增值电信业务经营许可证：<a class = "right_a" href = "#">浙B2-20110349</a></p>
+						<p>网络文化经营许可证：<a href = "#">浙网文（2016）0349-219号</a></p>
+						<p>
+							<a href = "#">安全责任书</a>
+						</p>
+						<p>
+							<a href = "#">
+								<img src = "../images/upload_ifrgemjwgq3gemzthazdambqmeyde_20x20.png">
+								<span>&nbsp;浙公网安备 33010602002329号</span>
+							</a>
+						</p>
+						<p>©2016 Mogujie.com 杭州卷瓜网络有限公司</p>
+					</div>
+				</div>
+				<div id = "foot_link">
+					<dl class = "link_company">
+						<dt>公司</dt>
+						<dd><a href = "#">关于我们</a></dd>
+						<dd><a href = "#">招聘信息</a></dd>
+						<dd><a href = "#">联系我们</a></dd>
+            		</dl>
+					<dl class = "link_consumer">
+						<dt>消费者</dt>
+						<dd><a href = "#">消费者服务</a></dd>
+						<dd><a href = "#">意见反馈</a></dd>
+						<dd><a href = "#">手机版下载</a></dd>
+					</dl>
+					<dl class = "link_business">
+						<dt>商家</dt>
+						<dd><a href = "#">商家入驻</a></dd>
+						<dd><a href = "#">商家后台</a></dd>
+						<dd><a href = "#">蘑菇商学院</a></dd>
+						<dd><a href = "#">商家社区</a></dd>
+					</dl>
+					<dl class = "link_safe">
+						<dt>权威认证</dt>
+						<dd>
+							<a href = "#"><img src = "../images/bank.jpg" /></a>
+							<a id = "last" href = "#"><img src = "../images/believable.jpg" /></a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div id = "foot_list">
+				<ul>
+					<li>友情链接: </li>
+					<li><a href = "#">蘑菇街游戏</a></li>
+					<li><a href = "#">淘粉吧</a></li>
+					<li><a href = "#">穿衣搭配</a></li>
+					<li><a href = "#">蘑菇街男装</a></li>
+					<li><a href = "#">蘑菇街鞋子</a></li>
+					<li><a href = "#">蘑菇街包包</a></li>
+					<li><a href = "#">QQ钱包</a></li>
+					<li><a href = "#">家具网</a></li>
+					<li><a href = "#">时尚品牌网</a></li>
+					<li><a href = "#">装修</a></li>
+					<li><a href = "#">蘑菇街母婴</a></li>
+					<li><a href = "#">衣联网</a></li>
+					<li><a href = "#">播视网视频</a></li>
+					<li><a href = "#">慧聪网</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
